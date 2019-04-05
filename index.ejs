@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div class="header">
+  #LanServe
+</div>
+    <div class="container">
+      
+      <div class="list">
+        
+         <%  if(!home){  %>
+               <div class="back-btn">
+                  back
+               </div>
+          <% }  %>
+        
+        <% rootlist.forEach(item=>{ %>
+         
+            <a href="<%= rootpath %>/<%= item %>"> 
+             <div class="item"><%= item %> </div>
+            </a>
+          
+        <% })  %>
+      </div>
+    </div>
+    <script>
+     var backBTN=document.querySelector('.back-btn');
+      if(backBTN){
+        backBTN.addEventListener('click',e=>{
+        history.back();
+     }) 
+      }
+    </script>
+</body>
+</html>
