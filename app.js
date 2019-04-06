@@ -23,7 +23,7 @@ app.get(/(\/\w)*\/\w+/,(req,res)=>{
     var relPath = reqUrl.path;
     console.log(relPath);
     var cwd=process.cwd();
-    var resolvedPath=relPath.replace('/',path.sep).replace('%20',' ');
+    var resolvedPath=relPath.replace('/',path.sep).replace(/%20/g,' ');
    console.log("resolved"+resolvedPath);
     var state = fs.statSync(path.join(cwd,resolvedPath));
     console.log(state);
