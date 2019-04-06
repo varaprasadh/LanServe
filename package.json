@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+   "bin": {
+     "lan-serve": "./app.js"
+   },
   "keywords": [],
   "author": "varaprasadh",
   "license": "MIT",
