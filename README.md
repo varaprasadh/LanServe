@@ -15,7 +15,7 @@
  ```
  > lan-serve
  ```
-- then open the browser and see localhost
+- then open the browser and paste the adress provided by cli in the terminal.
 ----
 # feel free to make changes and throw a pull request 
 
