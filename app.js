@@ -7,6 +7,8 @@ const fs=require('fs');
 const url=require('url');
 const wifihost=require('./wifi_address');
 //some comment
+//some comment
+
 app.use(express.static(path.join(__dirname,'public')));
 app.set('view engine', 'ejs');
 app.set('views', __dirname);
